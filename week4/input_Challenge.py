@@ -1,6 +1,5 @@
 def main():
-    number = number_return()
-    print("Returned: ", number)
+    number_return()
 
 
 def number_return():

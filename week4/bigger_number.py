@@ -6,13 +6,10 @@ def main():
 
 
 def largest_number(num_one, num_two):
-    if num_one < num_two:
-        biggest_num = num_two
-        smallest_num = num_one
+    if num_one > num_two:
+        print("{} is bigger than {}".format(num_one, num_two))
     else:
-        biggest_num = num_one
-        smallest_num = num_two
-    print("{} is bigger than {}".format(biggest_num, smallest_num))
+        print("{} is bigger than {}".format(num_two, num_one))
 
 
 main()
