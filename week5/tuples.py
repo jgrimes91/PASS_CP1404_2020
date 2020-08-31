@@ -1,7 +1,6 @@
 name, age = "Jess", 29
 jess = name, age
-print(jess[0], jess[1])
+print(jess)
 
 cat = ("Bardee", 10)
 print(cat[0])
-

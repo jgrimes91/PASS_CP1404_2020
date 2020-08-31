@@ -9,7 +9,6 @@ MENU = "Menu: \nL - List all shows\nA - Add new show\nM - Mark a show as watched
 
 def main():
     """
-
     :return:
     """
     print("PASS CP1404 Netflix Tracker")
@@ -50,7 +49,6 @@ def display_shows(shows):
 
     string_format = "{} {}. {:{}} Seasons: {:1}"
     title_length = find_length(0, shows)
-    # print(title_length)
     for i in range(0, len(shows)):
         complete = " "
         if shows[i][-1] == "c":
