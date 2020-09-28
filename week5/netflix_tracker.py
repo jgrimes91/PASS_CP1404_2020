@@ -13,7 +13,7 @@ def main():
     """
     print("PASS CP1404 Netflix Tracker")
     shows = []
-    shows_file = open(SHOWS)
+    shows_file = open("shows.csv")
     for line in shows_file:
         shows.append(line.strip().split(","))
     shows_file.close()
