@@ -1,0 +1,23 @@
+BoxLayout:
+    orientation: 'vertical'
+    Label:
+        id: output_label
+        text: "There are 0 cars in the carpark"
+        font_size: 30
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Button:
+            id: decrement
+            font_size: 48
+            text: '-1'
+            background_normal: ''
+            color: (0,0,0,1)
+            on_press: app.handle_increment(-1)
+        Button:
+            id: increment
+            font_size: 48
+            text: '+1'
+            background_normal: ''
+            color: (0,0,0,1)
+            on_press: app.handle_increment(1)

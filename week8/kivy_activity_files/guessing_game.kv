@@ -1,0 +1,28 @@
+BoxLayout:
+    orientation: 'vertical'
+    TextInput:
+        id: input_text
+        color: (0,0,0,1)
+        font_size: 50
+        on_text_validate: app.check_guess(self.text)
+        background_normal: ''
+        multiline: False
+
+    Label:
+        id: output_label
+        font_size: 42
+        text: 'Enter a guess between 1-10!'
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Button:
+            id: reset
+            font_size:30
+            text: 'Reset game'
+            on_press: app.reset_game()
+
+        Button:
+            id: exit
+            font_size:30
+            text: 'Exit'
+            on_press: app.exit_game()

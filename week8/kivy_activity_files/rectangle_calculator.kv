@@ -1,0 +1,32 @@
+BoxLayout:
+    orientation: 'vertical'
+    Label:
+        id: output_label
+        text: "Enter width & length to make some calculations!"
+        font_size: 30
+
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: input_width
+            hint_text: 'Width (cm)'
+            font_size: 50
+
+        TextInput:
+            id: input_length
+            hint_text: 'Length (cm)'
+            font_size: 50
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Button:
+            id: perimeter
+            font_size:30
+            text: 'Calculate Perimeter'
+            on_press: app.calculate_perimeter(input_length.text, input_width.text)
+
+        Button:
+            id: area
+            font_size:30
+            text: 'Calculate Area'
+            on_press: app.calculate_area(input_length.text, input_width.text)

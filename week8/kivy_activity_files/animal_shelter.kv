@@ -1,0 +1,21 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        Image:
+            source: 'leia.jpg'
+            id: animal_image
+
+        Spinner:
+            id: animal_selection
+            text: 'Choose an animal'
+            font_size: 24
+            values: app.animal_names
+            on_text: app.get_animal_info(self.text)
+
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            id: output_label
+            font_size: 20
+            text: 'Choose an animal from the dropdown menu to learn about our rescues!'
